@@ -20,8 +20,13 @@ while (like != 'yes' && like != 'no') {
     like = prompt('Do you like cars? please answer with yes or no');
 }
 var pic = prompt('how many times you want to see your car photo?')
-for (var i = 0; i < pic; i++){
-    document.write('<img src="https://www.calderstewart.co.nz/assets/GalleryImages/_resampled/CompressedImageW10/Thrifty-Car-Rental-1.jpg">')
-}
+displayImage(pic);
     document.write('<h2>' + message + '</h2>');
 alert('DONT USE PHONE WHILLE DRIVING');
+
+//display imges times times
+function displayImage(times){
+    for(var i=0; i<times; i++){
+        document.write('<img src="https://www.calderstewart.co.nz/assets/GalleryImages/_resampled/CompressedImageW10/Thrifty-Car-Rental-1.jpg">');
+    }
+}
